@@ -1,0 +1,217 @@
+
+/* ANIMATION RIGHT TO LEFT*/
+@-webkit-keyframes rightToLeft{ 
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translateX(300px);
+	    -moz-transform: translateX(300px);
+	    transform: translateX(300px) ;
+	    
+	}
+	30% {
+	    opacity: 1;
+	    -webkit-transform: translateX(0px) ;
+	    -moz-transform: translateX(0px) ;
+	    transform: translateX(0px) ;
+
+	}
+	100% {
+	    opacity: 1;
+	    -webkit-transform: scale(1) ;
+	    -moz-transform:  scale(1) ;
+	    transform:  scale(1) ;
+	    
+	}
+}
+
+
+
+
+.rightToLeft{
+    -webkit-animation: rightToLeft 2s ease-in-out;
+    -moz-animation: rightToLeft 2s ease-in-out;
+    -o-animation: rightToLeft 2s ease-in-out;
+    -ms-animation: rightToLeft 2s ease-in-out;
+    animation: rightToLeft 2s ease-in-out;	
+	
+}
+
+.web_logo{
+		float:right;
+}
+.web_logo img{
+    width: 150px;
+    height: 100px;
+}
+
+
+
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #003eff;
+    background: #777 !important;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+
+input.proVersion{
+	border:2px solid #42b72a;
+	background:#42b72a !important;
+	color:#fff !important
+}
+h2 a.proVersion{
+	background:#42b72a !important;
+	color:#fff !important
+}
+
+#menu-posts-webd_adverts .wp-submenu li.proVersion a{
+	color:#42b72a !important
+}
+
+.proSpan{
+	color:#42b72a;
+	font-style:italic;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.proUrl{
+	color:#fff;
+	background:#42b72a;
+	padding:10px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.proUrl:hover{
+	color:#fff;
+	box-shadow:0 2px 2px #777;
+}
+
+.proRight{
+		background:#fff;
+		border:4px solid #42b72a;
+		border-right:none;
+		padding:10px;
+		box-sizing:border-box;
+		text-align:center;
+		margin-top:5px;
+		border-radius: 5px 0 0 5px ;
+		box-shadow:0 2px 10px #777;
+}
+
+
+/*  PRO VERSION MODAL */
+#AdvertsClickTrackerModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#AdvertsClickTrackerModal .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+#AdvertsClickTrackerModal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#AdvertsClickTrackerModal .close:hover,
+#AdvertsClickTrackerModal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clearfix{
+	overflow:hidden;
+	clear:both;
+	width:100%;
+	box-sizing:border-box;
+}
+
+.column1,
+.columns2,
+.columns3,
+.columns4,
+.columns5,
+.columns6,
+.column-23,
+.column-13{
+	/*box-sizing:border-box;*/
+	float:left !important;
+}
+
+.verticalAlign{
+  display: flex;
+  align-items: center;
+  justify-content: center;	
+}
+
+.verticalAlign .fa-check{
+	color:#42b72a;
+}
+
+.column1{
+	width:100% !important;
+	float:none !important;
+}
+.columns2{
+	width:50% !important;
+}
+.columns3{
+	width:33.3% !important;
+}
+.columns4{
+	width:25% !important;
+}
+.columns5{
+	width:20% !important;
+}
+.columns6{
+	width:16.6% !important;
+}
+
+.column-23{
+	width:69%;
+	margin-right:1%;
+}
+.column-13{
+	width:29%;
+	margin-left:1%;
+}
+
+
+@media(max-width:767px){
+	.columns2,
+	.columns3,
+	.columns4,
+	.columns5,
+	.columns6,
+	.column-23,
+	.column-13	
+		float:none !important;
+		width:100% !important;
+	}
+	
+	.verticalAlign{
+		display:block;
+	}
+}

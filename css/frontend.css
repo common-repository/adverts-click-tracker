@@ -1,0 +1,207 @@
+/* ANIMATION fadeIN*/
+@-webkit-keyframes fadeIn{ 
+	0% {
+	    opacity: 0;    
+	}
+	30% {
+	    opacity: 0.4;
+	}
+	30% {
+	    opacity: 0.7;
+	}	
+	100% {
+	    opacity: 1; 
+	}
+}
+
+
+/* ANIMATION LEFT TO RIGHT*/
+@-webkit-keyframes leftToRight{ 
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translateX(-300px);
+	    -moz-transform: translateX(-300px);
+	    transform: translateX(-300px) ;
+	    
+	}
+	30% {
+	    opacity: 1;
+	    -webkit-transform: translateX(0px) ;
+	    -moz-transform: translateX(0px) ;
+	    transform: translateX(0px) ;
+
+	}
+	100% {
+	    opacity: 1;
+	    -webkit-transform: scale(1) ;
+	    -moz-transform:  scale(1) ;
+	    transform:  scale(1) ;
+	    
+	}
+}
+
+/* ANIMATION RIGHT TO LEFT*/
+@-webkit-keyframes rightToLeft{ 
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translateX(300px);
+	    -moz-transform: translateX(300px);
+	    transform: translateX(300px) ;
+	    
+	}
+	30% {
+	    opacity: 1;
+	    -webkit-transform: translateX(0px) ;
+	    -moz-transform: translateX(0px) ;
+	    transform: translateX(0px) ;
+
+	}
+	100% {
+	    opacity: 1;
+	    -webkit-transform: scale(1) ;
+	    -moz-transform:  scale(1) ;
+	    transform:  scale(1) ;
+	    
+	}
+}
+
+
+/* ANIMATION BOTTOM TO UP*/
+@-webkit-keyframes bottomToUp{ 
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translateY(200px);
+	     -moz-transform: translateY(200px);
+	     transform: translateY(200px);
+	}
+	30% {
+	    opacity: 1;
+	    -webkit-transform: translateY(0px);
+	    -moz-transform: translateY(0px);
+	    transform: translateY(0px);
+	    }
+	100% {
+	    opacity: 1;
+	    -webkit-transform: scale(1);
+	    -moz-transform: scale(1);
+	    transform: scale(1);
+	}
+}
+
+/* ANIMATION ROTATE*/
+@-webkit-keyframes rotate360{ 
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translateX(-300px) rotate(0deg);
+	    -moz-transform: translateX(-300px) rotate(0deg);
+	    transform: translateX(-300px) rotate(0deg);
+	    
+	}
+	30% {
+	    opacity: 1;
+	    -webkit-transform: translateX(0px) rotate(360deg);
+	    -moz-transform: translateX(0px) rotate(360deg);
+	    transform: translateX(0px) rotate(360deg);
+
+	}
+	100% {
+	    opacity: 1;
+	    -webkit-transform: scale(1) rotate(0deg);
+	    -moz-transform:  scale(1) rotate(0deg);
+	    transform:  scale(1) rotate(0deg);
+	    
+	}
+}
+
+.fadeIn{
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
+    -ms-animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease-in-out;	
+	
+}
+.leftToRight{
+    -webkit-animation: leftToRight 2s ease-in-out;
+    -moz-animation: leftToRight 2s ease-in-out;
+    -o-animation: leftToRight 2s ease-in-out;
+    -ms-animation: leftToRight 2s ease-in-out;
+    animation: leftToRight 2s ease-in-out;	
+	
+}
+.rightToLeft{
+    -webkit-animation: rightToLeft 2s ease-in-out;
+    -moz-animation: rightToLeft 2s ease-in-out;
+    -o-animation: rightToLeft 2s ease-in-out;
+    -ms-animation: rightToLeft 2s ease-in-out;
+    animation: rightToLeft 2s ease-in-out;	
+	
+}
+.bottomToUp{
+    -webkit-animation: bottomToUp 2s ease-in-out;
+    -moz-animation: bottomToUp 2s ease-in-out;
+    -o-animation: bottomToUp 2s ease-in-out;
+    -ms-animation: bottomToUp 2s ease-in-out;
+    animation: bottomToUp 2s ease-in-out;	
+	
+}
+.rotate360{
+    -webkit-animation: rotate360 2s ease-in-out;
+    -moz-animation: rotate360 2s ease-in-out;
+    -o-animation: rotate360 2s ease-in-out;
+    -ms-animation: rotate360 2s ease-in-out;
+    animation: rotate360 2s ease-in-out;	
+	
+}
+
+
+.clearfix{
+	overflow:hidden;
+	clear:both;
+	width:100%;
+	box-sizing:border-box;
+}
+
+
+.column1,
+.columns2,
+.columns3,
+.columns4,
+.columns5,
+.columns6,
+.column-23,
+.column-13{
+	/*box-sizing:border-box;*/
+	float:left !important;
+}
+
+.column1{
+	width:100% !important;
+	float:none !important;
+}
+.columns2{
+	width:50% !important;
+}
+.columns3{
+	width:33.3% !important;
+}
+.columns4{
+	width:25% !important;
+}
+.columns5{
+	width:20% !important;
+}
+.columns6{
+	width:16.6% !important;
+}
+
+@media(max-width:767px){
+	.columns2,
+	.columns3,
+	.columns4,
+	.columns5,
+	.columns6,	
+		float:none !important;
+		width:100% !important;
+	}
+}
